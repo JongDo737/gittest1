@@ -42,7 +42,8 @@ public class Wrapper_Ex3 {
 
 		int num2 = Integer.parseInt(str10) * Integer.parseInt(str11);
 		System.out.println(num2);
-
+		
+		//ÇÑ±Û±úÁü È®ÀÎ ÄÚµå ~!!~!!~!
 	}
 
 }
