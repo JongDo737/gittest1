@@ -63,12 +63,6 @@ public class DatastructureTest1 {
 		System.out.println(list.indexOf(300)); // -1
 		// 원하는 값의 인덱스위치를 알려주는 녀석 -> 없으먄 -1을 반환
 
-		
-		
-		
-		
-		
-		
 		// 문제 1
 		ArrayList<String> names = new ArrayList<>();
 
@@ -80,19 +74,18 @@ public class DatastructureTest1 {
 		int count = 0;
 		String inputName;
 		while (true) {
-			System.out.println((count+1) + "번째 이름을 입력하세요 (종료 : 1)");
+			System.out.println((count + 1) + "번째 이름을 입력하세요 (종료 : 1)");
 			inputName = sc.next();
-			if(inputName.equals("1")) {
+			if (inputName.equals("1")) {
 				break;
-			}
-			else {
+			} else {
 				names.add(inputName);
-				count++;				
+				count++;
 			}
 		}
 		System.out.println(names);
 		System.out.println("-----------------------");
-		
+
 		for (String s : names) {
 			System.out.println(s);
 		}

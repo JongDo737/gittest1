@@ -41,14 +41,13 @@ public class DataStructureTest2 {
 		// 내부에 값이 있는지 확인
 		System.out.println(set1.contains(1));
 		System.out.println(set1.contains(3));
-		
+
 		HashSet<Integer> set2 = new HashSet();
-		while(set2.size()<6) {
-			set2.add(getRandomNumber());	
+		while (set2.size() < 6) {
+			set2.add(getRandomNumber());
 		}
 		System.out.println(set2);
-		
-		
+
 	}// end of main
 
 	public static int getRandomNumber() {

@@ -60,28 +60,19 @@ public class MainActivity extends JFrame implements CallbackBtn {
 	@Override
 	public void picktureSwing(boolean isLeft) {
 		if (isLeft) {
-			for (int i = 0; i < 10; i++) {
-				num++;
-				if (num == 4) {
-					num = 0;
-				}
-				jinHo = ImageIcon[num];
-				repaint();
-//				try {
-//					Thread.sleep(100);
-//				} catch (InterruptedException e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
+			num++;
+			if (num == 4) {
+				num = 0;
 			}
+
 		} else {
 			num--;
 			if (num == -1) {
 				num = 3;
 			}
-			jinHo = ImageIcon[num];
-			repaint();
 		}
+		jinHo = ImageIcon[num];
+		repaint();
 
 	}
 
