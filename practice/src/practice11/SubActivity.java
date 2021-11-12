@@ -43,7 +43,15 @@ public class SubActivity extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		JButton clickedButton = (JButton)e.getSource();
 		if(clickedButton == leftBtn) {
-			callbackBtn.picktureSwing(true);
+			for(int i=0;i<10;i++) {
+				callbackBtn.picktureSwing(true);
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
 		}
 		else if(clickedButton == rightBtn){
 			callbackBtn.picktureSwing(false);
