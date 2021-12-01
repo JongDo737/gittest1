@@ -15,7 +15,8 @@ public class MySqlConnection {
 	private static Statement stmt = null;
 	// 문자열을 쿼리문으로 만들어줌
 	private static ResultSet rs = null;
-
+	//Set 계열로 결과를 담아두는 객체
+	
 	public static void main(String[] args) {
 
 		try {

@@ -6,32 +6,21 @@ public class Main{
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int M = sc.nextInt();
-		int N = sc.nextInt();
-		int count=0;
-		int total_count = 0;
-		int sum = 0;
-		int j;
-
-		// 소수를 배열에 담는 과정
-		for (int i = M; i <= N; i++) {
+		int A = sc.nextInt();
+		int B = sc.nextInt();
+		int V = sc.nextInt();
+		sc.close();
+		int restV=V;
+		int count=1;
+		while(true) {
 			
-			for (j = 2; j < i; j++) {
-				if (i % j == 0) {
-					break;
-				}
+			restV-=A;
+			if(restV<=0) {
+				break;
 			}
-			if (j == i) {
-				count=j;
-				sum+=i;
-			}
+			restV+=B;
+			count++;
 		}
-		if(sum==0) {
-			System.out.println("-1");
-		}
-		else {
-			System.out.println(sum);
-			System.out.println(count);	//첫 소수가 최소값임
-		}
+		System.out.println(count);
 	}
 }
