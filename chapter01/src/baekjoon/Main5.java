@@ -1,15 +1,17 @@
 package baekjoon;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Main5 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		long A = sc.nextLong();
-		long B = sc.nextLong();
-		String sum = ""+(A+B);
-		System.out.println(sum);
+		BigInteger A = new BigInteger(sc.next());
+		BigInteger B = new BigInteger(sc.next());
+		A = A.add(B);
+		System.out.println(A);
+		
 	}
 
 }
